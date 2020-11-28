@@ -84,7 +84,7 @@ export default function Grafica() {
           return d.index2006;
         }),
       ]);
-      
+
       yAxis.transition().duration(1000).call(d3.axisLeft(y));
 
       var u = svg.selectAll("rect").data(data);
@@ -104,9 +104,12 @@ export default function Grafica() {
         .attr("height", function (d) {
           return height - y(d.index2006);
         })
-        .on("end", function () {
-          d3.select(this).transition().attr("fill", "blue");
-        });
+        .attr("fill", "blue");
+
+
+        //.on("end", function () {
+          //d3.select(this).transition().attr("fill", "blue");
+        //});
 
       u.exit().remove();
     });
