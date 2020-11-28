@@ -105,12 +105,6 @@ export default function Grafica() {
           return height - y(d.index2006);
         })
         .attr("fill", "blue");
-
-
-        //.on("end", function () {
-          //d3.select(this).transition().attr("fill", "blue");
-        //});
-
       u.exit().remove();
     });
   }, []);
