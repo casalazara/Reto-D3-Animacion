@@ -110,7 +110,7 @@ export default function Grafica() {
   }, []);
 
   return (
-    <div className="container text-center">
+    <div className="container">
       <h1>Reto 1: Ciudad vs Indice</h1>
       <div>
         <button id="start">
