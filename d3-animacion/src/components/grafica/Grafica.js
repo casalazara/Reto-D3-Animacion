@@ -116,13 +116,13 @@ export default function Grafica() {
   }, []);
 
   return (
-    <div class="container">
-      <h1>Reto 1</h1>
+    <div className="container text-center">
+      <h1>Reto 1: Ciudad vs Indice</h1>
       <div>
-        <button className="btn-grap" id="start">
+        <button id="start">
           2005
         </button>
-        <button className="btn-grap" id="reset">
+        <button id="reset">
           2006
         </button>
       </div>
